@@ -2,13 +2,13 @@ let obj1={
 
     name:"ridhu",
     place:"calicut",
-
+    details: function(job,salary){
+        console.log(`${this.name},${this.place}`)
+        console.log(`i am a ${job} my salary is ${salary}`)
+          }
   
 }
-let details= function(job,salary){
-    console.log(`${this.name},${this.place}`)
-    console.log(`i am a ${job} my salary is ${salary}`)
-      }
+
 
 let obj2={
     name:"vaishnav",
@@ -17,5 +17,5 @@ let obj2={
 
 }
 
-  details.apply(obj2,["developer",700000])
+  obj1.details.apply(obj2,["developer",900000])
   
